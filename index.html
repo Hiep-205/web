@@ -8,18 +8,47 @@
 </head>
 
 <body style="background-color: blanchedalmond;">
+    <button onclick="hienChu()"
+    style="
+        background-color: green;
+        color: black;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;">
+        đừng bấm vào đây!!!!
+    </button>
     <h1 style="color : rgb(33, 111, 163);
      text-align: center;                            ">
     XIN CHÀO</h1>
+    <p id="chuMoi" style="font-size: 50px;text-align: center ;color: red; display: none;">
+        đã bảo đừng có bấm
+    </p>
     <p style="color: rgb(114, 34, 157);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;">2 con chó</p>
+  
     <img src="OIP.webp";
        alt="con chó"
        width="300" height="200"
        style="display:block; margin:0 auto;">
+       
+   
+    
+    <script>
+        function hienChu() {
+            // Lấy phần tử có id="chuMoi"
+            var chu = document.getElementById("chuMoi");
+
+            // Hiện dòng chữ (đổi từ ẩn -> hiện)
+            chu.style.display = "block";
+        }
+    </script>
+
 </body>
+
 </html>
