@@ -1,52 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bấm vào sẽ có bất ngờ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pháo hoa tương tác 🎆</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <h1>🎆</h1>
+  <p></p>
 
-<body style="background-color: blanchedalmond;">
+  <!-- 🔥 Canvas để vẽ pháo hoa -->
+  <canvas id="fireworks"></canvas>
 
-    <button onclick="hienChu()"
-        style="background-color: green;
-               color: black;
-               font-size: 20px;
-               padding: 10px 20px;
-               border: none;
-               border-radius: 10px;
-               cursor: pointer;">
-        đừng bấm vào đây!!!!
-    </button>
-
-    <h1 style="color: rgb(33, 111, 163); text-align: center;">XIN CHÀO</h1>
-
-    <p id="chuMoi" style="font-size: 50px; text-align: center; color: red; display: none;">
-        đã bảo đừng có bấm
-    </p>
-
-    <p style="color: rgb(114, 34, 157);
-              height: 100vh;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 100px;">
-        2 con chó
-    </p>
-
-    <img src="OIP.webp"
-         alt="con chó"
-         width="300" height="200"
-         style="display:block; margin:0 auto;">
-
-    <script>
-        window.onload = function() {
-            window.hienChu = function() {
-                var chu = document.getElementById("chuMoi");
-                chu.style.display = "block";
-            }
-        };
-    </script>
-
+  <script src="scripts.js"></script>
 </body>
 </html>
