@@ -1,4 +1,4 @@
-/* ===== Reset & nền ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Hiệu ứng chữ phát sáng */
+
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #ff0077, 0 0 20px #ff00ff;
@@ -41,7 +41,7 @@ p {
   }
 }
 
-/* Canvas phủ toàn màn hình */
+
 canvas {
   position: fixed;
   top: 0;
