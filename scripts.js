@@ -15,10 +15,17 @@ function resizeCanvas() {
 // Mảng chứa các hạt pháo hoa
 let particles = [];
 
-// Khi click chuột → tạo pháo hoa tại vị trí click
+// Khi click chuột hoặc chạm màn hình → tạo pháo hoa tại vị trí
 window.addEventListener("click", (e) => {
   createFirework(e.clientX, e.clientY);
 });
+
+// 🔥 Thêm sự kiện cảm ứng cho điện thoại
+window.addEventListener("touchstart", (e) => {
+  const touch = e.touches[0]; // lấy điểm chạm đầu tiên
+  createFirework(touch.clientX, touch.clientY);
+});
+
 
 // Tạo hạt pháo hoa
 function createFirework(x, y) {
